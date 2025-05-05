@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+}
+.contenedor{
+    min-height: 100vh;
+}
+.cajaLogin{
+    font-size: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    background-color: rgb(233, 233, 233, 0,4);
+    backdrop-filter: blur(15px);
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 10px lightgray;
+}
+input{
+    border: 2px lightgray solid;
+}
+.titulo{
+    font-size: 30px;
+}
+.subtitulo{
+    font-size: 18px;
+}

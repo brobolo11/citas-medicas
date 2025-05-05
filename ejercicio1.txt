@@ -1,0 +1,11 @@
+SISTEMAS DE CITAS MEDICAS (TERMINAL)
+
+Único hospital
+Pacientes
+Especialistas
+Citas → Fecha y hora (Asiste o no Asiste)
+
+
+Usuario admin → Dar de alta a especialistas
+Usuario administrativo → Historial paciente, dar de alta a pacientes, citas (por paciente, por día-mes, pacientes que asisten en un rango de fechas,
+no asisten en un rango de fechas), dar citas
