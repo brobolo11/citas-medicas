@@ -10,7 +10,7 @@ async function main() {
   const pacientes = db.collection("pacientes");
   const citas = db.collection("citas");
 
-  console.log("--- SISTEMA DE CITAS MEDICAS ---");
+  console.log("SISTEMA DE CITAS MEDICAS");
 
   const usuario = readline.question("Usuario (admin/administrativo): ");
   const contrasena = readline.question("Contrasena: ", { hideEchoBack: true });
