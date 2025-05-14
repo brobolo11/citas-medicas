@@ -11,6 +11,7 @@ $(document).ready(function () {
           contrasena: contrasena
         },
         success: function (data) {
+          console.log("DATA RECIBIDA:", data);
           alert(data.mensaje);
           if (data.success) {
             if (nombre === 'admin') {
@@ -22,6 +23,7 @@ $(document).ready(function () {
         },
         error: function (xhr, status, error) {
           console.error("Error:", error);
+          console.log("Respuesta completa:", xhr.responseText);
           alert("Ocurrió un error al intentar iniciar sesión.");
         }
       });
