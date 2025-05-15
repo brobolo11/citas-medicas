@@ -34,23 +34,23 @@ body{
     border-radius: 10px 10px 0px 0px;
 }
 .modalAdmin {
-    position: fixed; /* Fija el modal en la pantalla */
-    top: 50%; /* Lo coloca al 50% desde la parte superior */
-    left: 50%; /* Lo coloca al 50% desde la parte izquierda */
-    transform: translate(-50%, -50%); /* Lo desplaza hacia arriba y a la izquierda para centrarlo */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
-    width: 80%; /* Tamaño del modal */
-    max-width: 500px; /* Ancho máximo para evitar que se haga demasiado grande */
-    border-radius: 10px; /* Bordes redondeados */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
     padding: 20px;
-    display: none; /* Lo ocultamos al principio */
-    z-index: 1050; /* Asegura que el modal esté encima de otros elementos */
+    display: none;
+    z-index: 1050;
     color: white;
 }
 .modalAdmin.d-flex {
     display: flex;
-    align-items: center; /* Alinea el contenido en el centro verticalmente */
-    justify-content: center; /* Alinea el contenido en el centro horizontalmente */
+    align-items: center;
+    justify-content: center;
 }
 .modalAdmin::before {
     content: "";
@@ -59,8 +59,8 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
-    z-index: -1; /* Coloca el fondo por debajo del formulario */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 .modalAdmin form{
     width: 70%;

@@ -1,3 +1,5 @@
+//EJERCICIO TERMINAL
+
 const { MongoClient } = require('mongodb');
 const readline = require('readline-sync');
 const uri="mongodb+srv://bfanvei:Lolitofernandez10@cluster0.3swo1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"

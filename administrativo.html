@@ -18,7 +18,7 @@
           <div class="contenedorTarjetas d-flex flex-wrap justify-content-center gap-4 w-100">
             <div class="tarjeta d-flex flex-column bg-light rounded-3">
                 <img src="demetrius.jpg" alt="">
-                <button type="button" class="btn btn-light">HISTORIAL PACIENTE</button>
+                <button id="btnHistorialPaciente" type="button" class="btn btn-light">HISTORIAL PACIENTE</button>
             </div>
             <div class="tarjeta d-flex flex-column bg-light rounded-3">
                 <img src="altaPaciente.jpg" alt="">
@@ -42,21 +42,68 @@
 
     </div>
 
-    <div class="modalPaciente d-none justify-content-center align-items-center">
-        
-        <form action="" class="d-flex flex-column">
-
-            <p>Nombre del paciente:</p>
-            <input type="text">
-            <p>DNI:</p>
-            <input type="text">
-
-            <button class="rounded-1" type="button" class="btn btn-light">ENVIAR</button>
-
+    <!-- Modal para mostrar historial del paciente -->
+    <div id="modalPaciente" class="modalPaciente d-none justify-content-center align-items-center">
+        <form id="formHistorial" class="d-flex flex-column">
+          <p>DNI del paciente:</p>
+          <input type="text" id="dniInput">
+          <div id="resultadoHistorial" class="container mt-4 text-light"></div>
+          <button id="btnEnviarHistorial" class="rounded-1 mt-2 btn btn-secondary" type="submit">ACEPTAR</button>
         </form>
+    </div>
 
+    <!-- Modal para dar de alta a paciente -->
+    <div id="modalAlta" class="modalPaciente d-none justify-content-center align-items-center">
+        <form id="formAlta" class="d-flex flex-column">
+          <p>Nombre del paciente:</p>
+          <input type="text" id="nombreAlta" required>
+          <p>DNI:</p>
+          <input type="text" id="dniAlta" required>
+          <div id="resultadoAlta" class="container mt-2 text-light"></div>
+          <button class="rounded-1 mt-2 btn btn-success" type="submit">DAR DE ALTA</button>
+        </form>
+    </div>
+
+    <!-- Modal para consultar cita -->
+    <div id="modalConsultar" class="modalPaciente d-none justify-content-center align-items-center">
+        <div class="modalFormulario d-flex flex-column">
+            
+          <form id="formAsistencia" class="w-100 mb-3">
+            <p>DNI del paciente:</p>
+            <input type="text" id="dniConsulta" class="form-control mb-2" required>
+            <button id="btnAceptarDNI" class="btn btn-secondary mt-2" type="submit">ACEPTAR</button>
+          </form>
+      
+          <!-- Contenedor dinamico donde se insertara el segundo formulario -->
+          <div id="resultadoConsulta" class="w-100"></div>
+      
+        </div>
+    </div>
+
+        <!-- Modal para dar cita -->
+    <div id="modalCita" class="modalPaciente d-none justify-content-center align-items-center">
+        <form id="formCita" class="d-flex flex-column">
+        <p>DNI del paciente:</p>
+        <input type="text" id="dniCita" required class="form-control mb-2">
+        
+        <p>Especialista:</p>
+        <select id="selectEspecialista" class="form-select mb-2" required>
+            <option value="">Cargando especialistas...</option>
+        </select>
+    
+        <p>Fecha y hora (YYYY-MM-DD HH:mm):</p>
+        <input type="datetime-local" id="fechaHoraCita" required class="form-control mb-2">
+    
+        <div id="resultadoCita" class="text-light mt-2"></div>
+        
+        <button type="submit" class="btn btn-success mt-2">CREAR CITA</button>
+        </form>
     </div>
 
     <script src="cerrarSesion.js"></script>
+    <script src="historial.js"></script>
+    <script src="altaPaciente.js"></script>
+    <script src="consultarCita.js"></script>
+    <script src="darCita.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@ $(document).ready(function () {
         modal.removeClass("d-none").addClass("d-flex");
     });
 
-    // Dar a la tecla ESC cierra el formulario
+    // Dar a la tecla esc cierra el formulario
     $(document).on("keydown", function (e) {
         if (e.key === "Escape") {
             modal.removeClass("d-flex").addClass("d-none");

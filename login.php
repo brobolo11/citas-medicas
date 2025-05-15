@@ -1,9 +1,9 @@
 <?php
-require 'vendor/autoload.php'; // Solo si usas Composer (recomendado)
+require 'vendor/autoload.php';
 
 header('Content-Type: application/json');
 
-// Verifica que llegaron datos POST
+// Verificar si llegan los datos POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = $_POST['nombre'] ?? '';
     $contrasena = $_POST['contrasena'] ?? '';

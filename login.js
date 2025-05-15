@@ -15,9 +15,9 @@ $(document).ready(function () {
           alert(data.mensaje);
           if (data.success) {
             if (nombre === 'admin') {
-              window.location.href = 'inicioAdmin.html';
+              window.location.href = 'admin.html';
             } else {
-              window.location.href = 'inicioAdministrativo.html';
+              window.location.href = 'administrativo.html';
             }
           }
         },
